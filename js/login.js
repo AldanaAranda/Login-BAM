@@ -26,12 +26,12 @@ function mostrarPerfil() {
     
     contenedor.innerHTML =
     "<div id= 'caja'>" +
-    "<h3>" + miPerfil[0] + "</h3>" +
+    "<h3>" + miPerfil[0] + " " + miPerfil[1] + "</h3>" +
         "<div id='info'>" + "</div>" +
-        "<img src=" + miPerfil[1] + ">" +
-        "<h4>" + miPerfil[2] + "</h4>" +
+        "<img src=" + miPerfil[2] + ">" +
+        "<h4>" + miPerfil[3] + "</h4>" +
         "<hr>" +
-        "<button id='callback'>" + miPerfil[3] + "</button>" +
+        "<button id='callback'>" + miPerfil[4] + "</button>" +
         "</div>";
     callback.addEventListener('click', fnAgregarInfo);
 }
@@ -46,6 +46,7 @@ function fnAgregarInfo() {
     
     var miPerfil = [
         nombre,
+        contra,
         "img/perfil.jpg",
         "Web developer",
         "Agregar descripcion"
