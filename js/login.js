@@ -1,14 +1,13 @@
-var nombre = prompt("Ingrese su nombre");
-var contra = prompt("Ingrese su apellido");
-alert("Gracias, ya puede ingresar");
+let nombre = "Aldana";
+let contra = "Aranda";
 
 function ingresarData() {
-    var user = document.querySelector("#usuario").value;
-    var clave = document.querySelector("#contrasenia").value;
-    var error = document.querySelector(".error");
+    let user = document.querySelector("#usuario").value;
+    let clave = document.querySelector("#contrasenia").value;
+    let error = document.querySelector(".error");
 
-    var usuario = nombre;
-    var password = contra;
+    let usuario = nombre;
+    let password = contra;
 
     if ((user == usuario) && (clave == password)) {
         console.log("Ingresaste correctamente");
@@ -22,7 +21,7 @@ function ingresarData() {
 }
 
 function mostrarPerfil() {
-    var contenedor = document.querySelector("#main");
+    let contenedor = document.querySelector("#main");
     
     contenedor.innerHTML =
     "<div id= 'caja'>" +
@@ -37,14 +36,14 @@ function mostrarPerfil() {
 }
 
 function fnAgregarInfo() {
-    var parrafo = prompt('¿Qué querés agregar?');
+    let parrafo = prompt('¿Qué querés agregar?');
     info.innerHTML =
         "<div id= 'box'>" +
         "<p>" + parrafo + "</p>"
         "</div>"
     }
     
-    var miPerfil = [
+    let miPerfil = [
         nombre,
         contra,
         "img/perfil.jpg",
